@@ -1,0 +1,13 @@
+name:                my-func-lang
+version:             0.1.0.0
+cabal-version:       2.0
+build-type:          Simple
+
+executable my-func-lang
+  main-is:           Main.hs
+  hs-source-dirs:    src
+  build-depends:     base >=4.14 && <5,
+                     containers,
+                     megaparsec >=9.0,
+                     parser-combinators >=1.2
+  default-language:  Haskell2010
