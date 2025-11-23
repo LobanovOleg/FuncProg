@@ -89,7 +89,7 @@ letRec = do
   rest <- expr
   return $ LetRec fname args body rest
 
--- Вызовы функций (требуют хотя бы один аргумент)
+-- Вызовы функций
 application :: Parser Expr
 application = do
   f <- identifier
